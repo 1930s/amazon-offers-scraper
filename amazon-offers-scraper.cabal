@@ -1,0 +1,35 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 28836fa735fdaefe42ef3c56dfba984dcf1567271f4371de5f4e94dca63298a8
+
+name:           amazon-offers-scraper
+version:        0.1.0.0
+homepage:       https://github.com/robkorn/amazon-offers-scraper#readme
+bug-reports:    https://github.com/robkorn/amazon-offers-scraper/issues
+author:         Robert Kornacki
+license:        BSD3
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/robkorn/amazon-offers-scraper
+
+library
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , bytestring
+    , extra-util-func
+    , scalpel-core
+  exposed-modules:
+      Amazon.Scraper.Offers
+  other-modules:
+      Paths_amazon_offers_scraper
+  default-language: Haskell2010
