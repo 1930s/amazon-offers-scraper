@@ -32,8 +32,8 @@ data AmazonOffer = AmazonOffer { price :: Maybe Float,
 
 
 -- | Creates an 'AmazonProduct' based off Amazon Offers webpage html.
--- createAmazonProduct :: PageHTML -> AmazonProduct
-createAmazonProduct webpage = runReader createProd webpage
+createAmazonProduct :: PageHTML -> AmazonProduct
+createAmazonProduct = runReader createProd
   where createProd = do
           title <- scrapeTitle
           img <- scrapeImage
