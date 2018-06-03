@@ -7,7 +7,7 @@ packages:
 
 extra-deps:
 - git: https://github.com/robkorn/extra-util-func
-  commit: 4541c41
+  commit: dafacf3
 
 
 

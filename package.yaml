@@ -16,3 +16,4 @@ library:
   - bytestring
   - scalpel-core
   - extra-util-func
+  - mtl

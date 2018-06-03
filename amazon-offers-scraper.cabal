@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 28836fa735fdaefe42ef3c56dfba984dcf1567271f4371de5f4e94dca63298a8
+-- hash: bf2cd7c8aae54b0c8f6a1a534715684aed9b589e94ac0810e5d05e4216df7e86
 
 name:           amazon-offers-scraper
 version:        0.1.0.0
@@ -27,6 +27,7 @@ library
       base >=4.7 && <5
     , bytestring
     , extra-util-func
+    , mtl
     , scalpel-core
   exposed-modules:
       Amazon.Scraper.Offers
