@@ -1,6 +1,6 @@
 # Amazon Offers Scraper
 
-This library scrapes available offers off of Amazon product page offers list. This use to be part of Amazon's API but was deprecated years ago, so this library was born.
+This library scrapes available offers off of an Amazon product page offers list. This use to be part of Amazon's API but was deprecated years ago, so this library was born.
 
 Must use amazon offers page, such as: "https://www.amazon.ca/gp/offer-listing/ASIN-HERE/"
 
@@ -21,7 +21,13 @@ Data Scraped Includes:
 
 ## How To Use
 
-Simply call `createAmazonProduct` with the html of the page as a bytestring. From there you have access to all of the data.
+The primary function to be used is `createAmazonProduct`:
+
+```
+createAmazonProduct :: PageHTML -> AmazonProduct
+```
+
+Simply call it with the PageHTML which is a ByteString. From there you have access to all of the data.
 ```
 let azProduct = createAmazonProduct webpageHTML
 title azProduct
